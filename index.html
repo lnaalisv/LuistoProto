@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Luisto Labs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    
+    <link href="styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-bg="luistoBlue">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="http://luisto.cloudapp.net/Content/images/logo2.png" id="logo" />
+                <!--<h1 class="navbar-brand">Luisto Labs</h1>-->
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Luisto</a></li>
+                  <li><a href="#">Tarjoukset</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#LogInModal">Log in</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </div>
+    <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://luisto.cloudapp.net/Content/images/a0.jpg" alt="...">
+          <div class="carousel-caption hidden-xs">
+            <a href="#" data-toggle="modal" data-target="#LuistoInfoModal" class="btn btn-success btn-lg">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                Mikä On Luisto
+            </a>
+            <a href="#" class="btn btn-success btn-lg">
+                Jätä Tarjouspyyntö
+                <span class="glyphicon glyphicon-send"></span>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://luisto.cloudapp.net/Content/images/a1.jpg" alt="...">
+          <div class="carousel-caption hidden-xs">
+            <a href="#" data-toggle="modal" data-target="#LuistoInfoModal" class="btn btn-success btn-lg">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                Mikä On Luisto
+            </a>
+            <a href="#" class="btn btn-success btn-lg">
+                Jätä Tarjouspyyntö
+                <span class="glyphicon glyphicon-send"></span>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://luisto.cloudapp.net/Content/images/a3.jpg" alt="...">
+          <div class="carousel-caption hidden-xs">
+            <a href="#" data-toggle="modal" data-target="#LuistoInfoModal" class="btn btn-success btn-lg">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                Mikä On Luisto
+            </a>
+            <a href="#" class="btn btn-success btn-lg">
+                Jätä Tarjouspyyntö
+                <span class="glyphicon glyphicon-send"></span>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://luisto.cloudapp.net/Content/images/a2.jpg" alt="...">
+          <div class="carousel-caption hidden-xs">
+            <a href="#" data-toggle="modal" data-target="#LuistoInfoModal" class="btn btn-success btn-lg">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                Mikä On Luisto
+            </a>
+            <a href="#" class="btn btn-success btn-lg">
+                Jätä Tarjouspyyntö
+                <span class="glyphicon glyphicon-send"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+        
+        
+        
+        <hr class="featurette-divider">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p class="lead">Uusimmat tarjouspyynnöt</p>
+                <table class="table table-striped">
+                    <tr>
+                        <th>#</th>
+                        <th>Tarjouspyyntö</th>
+                        <th class="hidden-xs">Deadline</th>
+                        <th class="hidden-xs">Tekoaika</th>
+                        <th class="hidden-xs">Paikkaunta/postinnumero</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Tarjouspyyntö</td>
+                        <td class="hidden-xs">Deadline</td>
+                        <td class="hidden-xs">Tekoaika</td>
+                        <td class="hidden-xs">Paikkaunta/postinnumero</td>
+                        <td><a href="#" class="btn btn-primary">Katso lisätiedot</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Jätä oma tarjouspyyntö <span class="glyphicon glyphicon-send"></span></a></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Näe kaikki tarjouspyynnöt <span class="glyphicon glyphicon-list"></span></a></div>
+            <div class="col-md-2"></div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <p class="lead">Suosituimmat tarjouspyynnöt</p>
+                <table class="table table-striped">
+                    <tr>
+                        <th>#</th>
+                        <th>Tarjouspyyntö</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>!!!</td>
+                    </tr>
+                </table>
+            </div>
+            <!--<div class="col-md-2"></div>-->
+            <div class="col-md-5">
+                <p class="lead">Suosituimmat kategoriat</p>
+                <table class="table table-striped">
+                    <tr>
+                        <th>#</th>
+                        <th>Kategoria</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>!!!</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>!!!</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-md-2"><p>&copy; Luisto Labs 2013</p></div>
+                <div class="col-md-6"></div>
+                <div class="col-md-2"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#ServiceAgreementModal">Service Agreement</a></div>
+                <div class="col-md-2"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#FeedbackModal">Leave Feedback</a></div>
+            </div>
+        </footer>
+    </div> <!-- /container -->
+
+    <!-- ServiceAgreementModal -->
+    <div class="modal fade" id="ServiceAgreementModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" data-bg="luistoBlue">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Service Agreement</h4>
+                </div>
+                <div class="modal-body">
+                    Here is service agreement
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- LogInModal -->
+    <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" data-bg="luistoBlue">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <div class="row">
+                                <style type="text/css">
+                                    
+                                </style>
+                                <div class="col-md-3"><label for="exampleInputEmail1">Email address</label></div>
+                                <div class="col-md-9">
+                                    <div class="left-inner-addon ">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                        <input type="text" class="form-control" id="userName" name="userName" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3"><label for="exampleInputPassword1">Password</label></div>
+                                <div class="col-md-9">
+                                    <div class="left-inner-addon ">
+                                        <i class="glyphicon glyphicon glyphicon-lock"></i>
+                                        <input type="text" class="form-control" id="password" name="password" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Log In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- FeedbackModal -->
+    <div class="modal fade" id="FeedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" data-bg="luistoBlue">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Leave feedback for us</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- LuistoInfoModal -->
+    <div class="modal fade" id="LuistoInfoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" data-bg="luistoBlue">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Kuvaus Luisto Palvelusta</h4>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

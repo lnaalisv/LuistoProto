@@ -1,0 +1,136 @@
+﻿
+
+body {
+    padding: 100px;
+    padding-top: 75px;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    height: 65px;
+    padding-top: 10px;
+}
+
+.navbar {
+    padding-top: 0px;
+    border-color: transparent;
+    border-width: 0px;
+    background: transparent;
+}
+*[data-bg="luistoBlue"]{
+  background-color: #0969A2;
+}
+
+*[data-bg="luistoBlue"] > h4 , *[data-bg="luistoBlue"] > button{
+  color: white;
+}
+.navbar-nav > li > a {
+    color:white !important;
+}
+
+.navbar-collapse{
+  border-width: 0px;
+  border-color: transparent;
+}
+
+.navbar-nav{
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: darkgray;
+}
+.item > img{
+  width: 100%;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+  background-color: transparent;
+}
+
+.container{
+    max-width:1000px;
+}
+
+.jumbotron{
+  background: url(http://www.lisaculptaylor.com/Portals/0/images/BlogImages/renovations.jpg) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+  padding-top: 0px;
+  margin-top: 0px;
+  transition-property:background;
+  transition-duration:3s;
+  transition-timing-function:linear;
+}
+.jumbotron > .container > h1{
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  font-family: 'Roboto', sans-serif;
+}
+.lead{
+  font-family: 'Roboto', sans-serif;
+}
+table{
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body, h1, h2, h3 {
+    font-family:'Oxygen', 'Arial', sans-serif;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+.lead{
+  text-align: center;
+}
+
+.featurette-heading {
+    font-size:30px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+/* input glyphicon */
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;    
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+@media (max-width: 978px) {
+    body {
+     padding-left:5px;
+     padding-right:5px;
+    }
+
+    .featurette-image{
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+  	  margin-bottom:0;
+  	}
+}
